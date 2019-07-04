@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		040D2E63227A79FC002AE162 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D2E62227A79FC002AE162 /* AppDelegate.m */; };
-		040D2E66227A79FC002AE162 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D2E65227A79FC002AE162 /* ViewController.m */; };
-		040D2E69227A79FC002AE162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040D2E67227A79FC002AE162 /* Main.storyboard */; };
 		040D2E6B227A79FD002AE162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040D2E6A227A79FD002AE162 /* Assets.xcassets */; };
 		040D2E6E227A79FD002AE162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040D2E6C227A79FD002AE162 /* LaunchScreen.storyboard */; };
 		040D2E71227A79FD002AE162 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D2E70227A79FD002AE162 /* main.m */; };
 		040D2E7B227A79FD002AE162 /* TouchIDTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D2E7A227A79FD002AE162 /* TouchIDTestTests.m */; };
 		040D2E86227A79FE002AE162 /* TouchIDTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D2E85227A79FE002AE162 /* TouchIDTestUITests.m */; };
+		040D2E96227A7BBB002AE162 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D2E94227A7BBB002AE162 /* LoginViewController.m */; };
+		040D2E97227A7BBB002AE162 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040D2E95227A7BBB002AE162 /* LoginViewController.xib */; };
+		040D2E9A227A7C23002AE162 /* LoginManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D2E99227A7C23002AE162 /* LoginManagement.m */; };
+		040D2E9E227A7D70002AE162 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D2E9C227A7D70002AE162 /* HomeViewController.m */; };
+		040D2E9F227A7D70002AE162 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040D2E9D227A7D70002AE162 /* HomeViewController.xib */; };
+		040D2ED3227ADCEB002AE162 /* GestureLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D2ED1227ADCEB002AE162 /* GestureLockViewController.m */; };
+		040D2ED4227ADCEB002AE162 /* GestureLockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040D2ED2227ADCEB002AE162 /* GestureLockViewController.xib */; };
+		040D2ED8227ADF78002AE162 /* SettingGestureLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D2ED6227ADF78002AE162 /* SettingGestureLockVC.m */; };
+		040D2ED9227ADF78002AE162 /* SettingGestureLockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040D2ED7227ADF78002AE162 /* SettingGestureLockVC.xib */; };
+		040D2EDC227ADFDF002AE162 /* GestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D2EDB227ADFDF002AE162 /* GestureLockView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +46,6 @@
 		040D2E5E227A79FC002AE162 /* TouchIDTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchIDTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040D2E61227A79FC002AE162 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		040D2E62227A79FC002AE162 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		040D2E64227A79FC002AE162 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		040D2E65227A79FC002AE162 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		040D2E68227A79FC002AE162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		040D2E6A227A79FD002AE162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040D2E6D227A79FD002AE162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040D2E6F227A79FD002AE162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +56,22 @@
 		040D2E81227A79FE002AE162 /* TouchIDTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchIDTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		040D2E85227A79FE002AE162 /* TouchIDTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchIDTestUITests.m; sourceTree = "<group>"; };
 		040D2E87227A79FE002AE162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040D2E93227A7BBB002AE162 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		040D2E94227A7BBB002AE162 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		040D2E95227A7BBB002AE162 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		040D2E98227A7C23002AE162 /* LoginManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginManagement.h; sourceTree = "<group>"; };
+		040D2E99227A7C23002AE162 /* LoginManagement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginManagement.m; sourceTree = "<group>"; };
+		040D2E9B227A7D70002AE162 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		040D2E9C227A7D70002AE162 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		040D2E9D227A7D70002AE162 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		040D2ED0227ADCEB002AE162 /* GestureLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureLockViewController.h; sourceTree = "<group>"; };
+		040D2ED1227ADCEB002AE162 /* GestureLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureLockViewController.m; sourceTree = "<group>"; };
+		040D2ED2227ADCEB002AE162 /* GestureLockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GestureLockViewController.xib; sourceTree = "<group>"; };
+		040D2ED5227ADF78002AE162 /* SettingGestureLockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingGestureLockVC.h; sourceTree = "<group>"; };
+		040D2ED6227ADF78002AE162 /* SettingGestureLockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingGestureLockVC.m; sourceTree = "<group>"; };
+		040D2ED7227ADF78002AE162 /* SettingGestureLockVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingGestureLockVC.xib; sourceTree = "<group>"; };
+		040D2EDA227ADFDF002AE162 /* GestureLockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureLockView.h; sourceTree = "<group>"; };
+		040D2EDB227ADFDF002AE162 /* GestureLockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureLockView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +124,22 @@
 			children = (
 				040D2E61227A79FC002AE162 /* AppDelegate.h */,
 				040D2E62227A79FC002AE162 /* AppDelegate.m */,
-				040D2E64227A79FC002AE162 /* ViewController.h */,
-				040D2E65227A79FC002AE162 /* ViewController.m */,
-				040D2E67227A79FC002AE162 /* Main.storyboard */,
+				040D2E93227A7BBB002AE162 /* LoginViewController.h */,
+				040D2E94227A7BBB002AE162 /* LoginViewController.m */,
+				040D2E95227A7BBB002AE162 /* LoginViewController.xib */,
+				040D2E98227A7C23002AE162 /* LoginManagement.h */,
+				040D2E99227A7C23002AE162 /* LoginManagement.m */,
+				040D2E9B227A7D70002AE162 /* HomeViewController.h */,
+				040D2E9C227A7D70002AE162 /* HomeViewController.m */,
+				040D2E9D227A7D70002AE162 /* HomeViewController.xib */,
+				040D2ED0227ADCEB002AE162 /* GestureLockViewController.h */,
+				040D2ED1227ADCEB002AE162 /* GestureLockViewController.m */,
+				040D2ED2227ADCEB002AE162 /* GestureLockViewController.xib */,
+				040D2ED5227ADF78002AE162 /* SettingGestureLockVC.h */,
+				040D2ED6227ADF78002AE162 /* SettingGestureLockVC.m */,
+				040D2ED7227ADF78002AE162 /* SettingGestureLockVC.xib */,
+				040D2EDA227ADFDF002AE162 /* GestureLockView.h */,
+				040D2EDB227ADFDF002AE162 /* GestureLockView.m */,
 				040D2E6A227A79FD002AE162 /* Assets.xcassets */,
 				040D2E6C227A79FD002AE162 /* LaunchScreen.storyboard */,
 				040D2E6F227A79FD002AE162 /* Info.plist */,
@@ -237,7 +271,10 @@
 			files = (
 				040D2E6E227A79FD002AE162 /* LaunchScreen.storyboard in Resources */,
 				040D2E6B227A79FD002AE162 /* Assets.xcassets in Resources */,
-				040D2E69227A79FC002AE162 /* Main.storyboard in Resources */,
+				040D2E97227A7BBB002AE162 /* LoginViewController.xib in Resources */,
+				040D2E9F227A7D70002AE162 /* HomeViewController.xib in Resources */,
+				040D2ED9227ADF78002AE162 /* SettingGestureLockVC.xib in Resources */,
+				040D2ED4227ADCEB002AE162 /* GestureLockViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040D2E66227A79FC002AE162 /* ViewController.m in Sources */,
+				040D2ED8227ADF78002AE162 /* SettingGestureLockVC.m in Sources */,
 				040D2E71227A79FD002AE162 /* main.m in Sources */,
 				040D2E63227A79FC002AE162 /* AppDelegate.m in Sources */,
+				040D2E9A227A7C23002AE162 /* LoginManagement.m in Sources */,
+				040D2E9E227A7D70002AE162 /* HomeViewController.m in Sources */,
+				040D2E96227A7BBB002AE162 /* LoginViewController.m in Sources */,
+				040D2ED3227ADCEB002AE162 /* GestureLockViewController.m in Sources */,
+				040D2EDC227ADFDF002AE162 /* GestureLockView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +342,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		040D2E67227A79FC002AE162 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				040D2E68227A79FC002AE162 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		040D2E6C227A79FD002AE162 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,13 +472,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4AMLBX7JS9;
 				INFOPLIST_FILE = TouchIDTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.BSurprise.TouchIDTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,13 +490,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4AMLBX7JS9;
 				INFOPLIST_FILE = TouchIDTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.BSurprise.TouchIDTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

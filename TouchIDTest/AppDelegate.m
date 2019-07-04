@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginManagement.h"
+#import "HomeViewController.h"
+#import "LoginViewController.h"
+#import "GestureLockViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +21,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    NSDictionary *loginInfo = [LoginManagement getLoginInfo];
+    //判斷是否登陸
+    if (loginInfo) {
+        if ([LoginManagement getOpenSafetyTouchIDState] &&[LoginManagement getGestureLockPassword]) {
+            self.window.rootViewController = [GestureLockViewController new];
+        }else{
+            self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[HomeViewController new]];
+        }
+        
+    }else{
+        self.window.rootViewController = [LoginViewController new];
+    }
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -35,8 +57,17 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    NSDictionary *loginInfo = [LoginManagement getLoginInfo];
+    //判斷是否登陸
+    if (loginInfo) {
+        if ([LoginManagement getOpenSafetyTouchIDState] &&[LoginManagement getGestureLockPassword]) {
+            self.window.rootViewController = [GestureLockViewController new];
+        }else{
+            self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[HomeViewController new]];
+        }
+        
+    }
 }
-
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.

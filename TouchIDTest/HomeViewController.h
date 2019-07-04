@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HomeViewController.h
 //  TouchIDTest
 //
 //  Created by mac on 2019/5/2.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface HomeViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

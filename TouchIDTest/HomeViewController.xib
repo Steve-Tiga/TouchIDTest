@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="deleteGesturePassword" destination="0cQ-ls-cGr" id="dTe-qz-3OU"/>
+                <outlet property="editorGesturePassword" destination="MYz-rA-pyx" id="rQ5-ov-GnL"/>
+                <outlet property="isOpenTouchID" destination="UYh-wo-l6R" id="Hrk-tn-PcF"/>
+                <outlet property="isOpenTouchIDLabel" destination="CmK-PQ-Z6K" id="Fz4-Sp-YXo"/>
+                <outlet property="safetyTouchID" destination="TlF-mJ-pOh" id="eF2-bl-00C"/>
+                <outlet property="saveLoginInfo" destination="cr8-4H-69g" id="j3A-qw-Mli"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UYh-wo-l6R">
+                    <rect key="frame" x="32" y="52" width="51" height="31"/>
+                    <connections>
+                        <action selector="openTouchIDAction:" destination="-1" eventType="valueChanged" id="p4N-Sh-78E"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="打開指紋登錄" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmK-PQ-Z6K">
+                    <rect key="frame" x="97" y="57" width="104" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TlF-mJ-pOh">
+                    <rect key="frame" x="32" y="115" width="51" height="31"/>
+                    <connections>
+                        <action selector="safetyTouchIDAction:" destination="-1" eventType="valueChanged" id="yda-R0-9lY"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否將TouchID用於app安全設置（即每次退出app到桌面再次進入app需驗證）//仿QQ新增滑動解鎖" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwo-9P-zcZ">
+                    <rect key="frame" x="97" y="102" width="262" height="57.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保存的TouchID信息" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cr8-4H-69g">
+                    <rect key="frame" x="32" y="323.5" width="311" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMr-h6-ah3">
+                    <rect key="frame" x="94" y="408" width="187.5" height="40"/>
+                    <color key="backgroundColor" red="0.30588235289999999" green="0.6588235294" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="hde-Km-peI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="登出">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="logoutAction:" destination="-1" eventType="touchUpInside" id="pgf-rg-bLA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cQ-ls-cGr">
+                    <rect key="frame" x="32" y="175.5" width="92" height="30"/>
+                    <state key="normal" title="刪除手勢密碼"/>
+                    <connections>
+                        <action selector="deleteGesturePasswordAction:" destination="-1" eventType="touchUpInside" id="Apb-nb-41F"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYz-rA-pyx">
+                    <rect key="frame" x="267" y="175.5" width="92" height="30"/>
+                    <state key="normal" title="編輯手勢密碼"/>
+                    <connections>
+                        <action selector="editorGesturePasswordAction:" destination="-1" eventType="touchUpInside" id="pLb-3s-rw6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TlF-mJ-pOh" firstAttribute="top" secondItem="UYh-wo-l6R" secondAttribute="bottom" constant="32" id="1aS-aP-6dx"/>
+                <constraint firstItem="UYh-wo-l6R" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="32" id="2f1-qd-azO"/>
+                <constraint firstItem="vwo-9P-zcZ" firstAttribute="centerY" secondItem="TlF-mJ-pOh" secondAttribute="centerY" id="37G-2S-J8D"/>
+                <constraint firstItem="UYh-wo-l6R" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="32" id="AvE-Dj-Q63"/>
+                <constraint firstItem="0cQ-ls-cGr" firstAttribute="leading" secondItem="TlF-mJ-pOh" secondAttribute="leading" id="B2U-52-yat"/>
+                <constraint firstItem="TlF-mJ-pOh" firstAttribute="leading" secondItem="UYh-wo-l6R" secondAttribute="leading" id="Jfx-He-9jK"/>
+                <constraint firstItem="MYz-rA-pyx" firstAttribute="top" secondItem="0cQ-ls-cGr" secondAttribute="top" id="PMW-aU-DIf"/>
+                <constraint firstItem="vwo-9P-zcZ" firstAttribute="leading" secondItem="TlF-mJ-pOh" secondAttribute="trailing" constant="16" id="QS4-F1-x3v"/>
+                <constraint firstItem="XMr-h6-ah3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VJH-AZ-ViY"/>
+                <constraint firstItem="XMr-h6-ah3" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:2" id="VTZ-Mg-LLR"/>
+                <constraint firstItem="MYz-rA-pyx" firstAttribute="trailing" secondItem="vwo-9P-zcZ" secondAttribute="trailing" id="WZ1-Wr-5mk"/>
+                <constraint firstAttribute="trailing" secondItem="vwo-9P-zcZ" secondAttribute="trailing" constant="16" id="WjV-2N-BYH"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="cr8-4H-69g" secondAttribute="trailing" constant="32" id="Zfs-0u-s15"/>
+                <constraint firstItem="cr8-4H-69g" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="32" id="a1A-Vk-ifl"/>
+                <constraint firstItem="cr8-4H-69g" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="bX9-Ox-liZ"/>
+                <constraint firstItem="CmK-PQ-Z6K" firstAttribute="leading" secondItem="UYh-wo-l6R" secondAttribute="trailing" constant="16" id="cx0-BH-YkD"/>
+                <constraint firstItem="XMr-h6-ah3" firstAttribute="top" secondItem="cr8-4H-69g" secondAttribute="bottom" constant="64" id="erf-7G-BMd"/>
+                <constraint firstItem="CmK-PQ-Z6K" firstAttribute="centerY" secondItem="UYh-wo-l6R" secondAttribute="centerY" id="rYl-Fb-2GM"/>
+                <constraint firstItem="0cQ-ls-cGr" firstAttribute="top" secondItem="vwo-9P-zcZ" secondAttribute="bottom" constant="16" id="sIQ-3t-TUc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-38" y="52"/>
+        </view>
+    </objects>
+</document>
